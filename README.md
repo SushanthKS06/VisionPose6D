@@ -2,7 +2,7 @@
 
 A production-grade computer vision system for real-time 6-DoF pose estimation and camera calibration, built with Python, OpenCV, and NumPy. This system is designed for robotics, augmented reality, and computer vision applications requiring high-precision pose tracking.
 
-## 🎯 Project Overview
+## Project Overview
 
 This complete pipeline provides:
 - **Camera Calibration**: High-accuracy calibration using checkerboard patterns
@@ -12,7 +12,7 @@ This complete pipeline provides:
 - **Real-Time Visualization**: 3D axes, object projection, and trajectory tracking
 - **Robustness Features**: Kalman filtering, outlier detection, and adaptive noise handling
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Installation
 
@@ -52,7 +52,7 @@ python main.py --run --calibration camera_calibration.pkl
 python main.py --benchmark --calibration camera_calibration.pkl --duration 30
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 VisionPose6D/
@@ -90,7 +90,7 @@ VisionPose6D/
 └── README.md                   # This file
 ```
 
-## 🔧 System Architecture
+## System Architecture
 
 ### Pipeline Flow
 
@@ -132,7 +132,7 @@ Camera Capture → Distortion Correction → ArUco Detection → Pose Estimation
    - Adaptive noise estimation
    - Occlusion handling and prediction
 
-## 📊 Mathematical Foundations
+## Mathematical Foundations
 
 ### Camera Model
 
@@ -167,7 +167,7 @@ The system implements multiple Perspective-n-Point algorithms:
 - **DLS**: Direct Least Squares method
 - **UPnP**: Uncalibrated PnP (when focal length unknown)
 
-## 🎮 Usage Examples
+## Usage Examples
 
 ### Basic Calibration
 
@@ -252,7 +252,7 @@ else:
     print(f"Filtered pose: {result['filtered_position']}")
 ```
 
-## 📈 Performance Optimization
+## Performance Optimization
 
 ### Real-Time Optimization
 
@@ -270,7 +270,7 @@ else:
 4. **Outlier Rejection**: Statistical filtering
 5. **Uncertainty Quantification**: Error bounds
 
-## 🔍 Calibration Guidelines
+## Calibration Guidelines
 
 ### Camera Calibration Best Practices
 
@@ -304,7 +304,7 @@ else:
    - Good lighting conditions
    - Minimal reflections
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -345,7 +345,7 @@ stats = estimator.get_pose_statistics()
 print(f"Success rate: {stats['success_rate']*100:.1f}%")
 ```
 
-## 📚 API Reference
+## API Reference
 
 ### Core Classes
 
@@ -380,7 +380,7 @@ multi_hypothesis_pose_estimation() # Multiple algorithms
 validate_pose(pose_result)        # Quality validation
 ```
 
-## 🧪 Testing and Validation
+## Testing and Validation
 
 ### Unit Tests
 
@@ -413,7 +413,7 @@ The system has been validated with:
 - Real-world robotics scenarios
 - AR/VR use cases
 
-## 🤝 Contributing
+## Contributing
 
 ### Development Setup
 
@@ -447,18 +447,18 @@ pip install -r requirements-dev.txt
 4. Ensure all tests pass
 5. Submit pull request with description
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OpenCV community for computer vision libraries
 - ArUco library for marker detection
 - NumPy for numerical computations
 - Matplotlib for visualization
 
-## 📞 Support
+## Support
 
 For questions, bug reports, or feature requests:
 1. Check the troubleshooting section
@@ -466,7 +466,7 @@ For questions, bug reports, or feature requests:
 3. Create new issue with detailed description
 4. Include system information and error logs
 
-## 🔮 Future Development
+## Future Development
 
 Planned enhancements:
 - Deep learning-based marker detection
@@ -478,4 +478,4 @@ Planned enhancements:
 
 ---
 
-**Built with ❤️ for the computer vision community**
+**Built for the computer vision community**
